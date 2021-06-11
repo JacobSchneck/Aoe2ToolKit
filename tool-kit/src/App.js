@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import {CivBoard} from "./routes/civ-draft/CivBoard.js"
+import { Statistics } from './routes/statistics/Statistics.js';
 
 export default function App() {
   return (
@@ -41,7 +42,7 @@ export default function App() {
   )
 }
 
- function Home() {
+function Home() {
   return <h2> Home </h2>
 }
 
@@ -50,5 +51,5 @@ function About() {
 }
 
 function Users() {
-  return <h2> Users </h2>
+  return <Statistics />
 } 

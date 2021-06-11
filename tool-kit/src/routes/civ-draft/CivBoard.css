@@ -1,0 +1,133 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+  .civ-board-row:after {
+      clear: both;
+      content: "";
+      display: table;
+  }
+
+  .draft-board-row:after {
+      clear: both;
+      content: "";
+      display: table;
+  }
+
+   .draft-button {
+      background: tan;
+      border: 1px solid #999;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;  
+      line-height: 34px;
+      height: 44px;
+      margin-right: -1px;  
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 90px;
+  }
+  
+   .off-button {
+      background: tan;
+      border: 1px solid #999;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;  
+      line-height: 34px;
+      height: 44px;
+      margin-right: -1px;  
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 90px;
+  }
+  
+   .on-button {
+      background: grey ;
+      border: 1px solid #999;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;  
+      line-height: 34px;
+      height: 44px;
+      margin-right: -1px;  
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 90px;
+  }
+
+   .pick-civ-button {
+      background: tan ;
+      border: 1px solid #999;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;  
+      line-height: 34px;
+      height: 44px;
+      margin-right: -1px;  
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 220px;
+  }
+
+  .off-button:active {
+    background-color: tan ;
+    transform: translateY(4px);
+  }
+
+  .on-button:active {
+    background-color: tan ;
+    transform: translateY(4px);
+  }
+
+  .draft-button:active {
+    background-color: tan ;
+    transform: translateY(4px);
+  }
+
+  .pick-civ-button:active {
+    background-color: tan ;
+    transform: translateY(4px);
+  }
+
+
+  .off-button:focus {
+    outline: none;
+  }
+
+  .on-button:focus {
+    outline: none;
+  }
+
+  .board:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .draft-board {
+    float: right;
+    width: 50%;
+  }
+
+  .civ-board {  
+    float: left;
+    width: 50%;  
+  }
+
+  .pick-board {
+    position: fixed;
+    top: 75%;
+    left: 48%;
+    transform: translate(-50%, -50%)
+  }
+
+  :root {
+		background: rgb(177, 144, 104);
+      /* background: rgb(197, 189, 179); */
+  }

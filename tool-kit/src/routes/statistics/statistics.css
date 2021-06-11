@@ -1,0 +1,112 @@
+body {
+  font: 12px "Century Gothic", Futura, sans-serif;
+  margin: 20px
+}
+
+/* USER-INFO STYLE */
+.user-info {
+  float: right;
+}
+
+/* inputs */
+.steam-id {
+  float: right;
+  width: 200px;  
+  margin: 2px;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.game-count {
+  float: right;
+  width: 200px;
+  margin: 2px;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.user-info-submission {
+  float: right;
+  width: 200px;
+  margin: 2px;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.user-info-submission:hover {
+  background-color: #6e746e;
+} 
+.user-info-submission:active {
+  background-color: #6e746e;
+  transform: translateZ(10px);
+  transform: translateY(4px);
+}
+
+/* FILTERS */
+.civ-button-off {
+  background: rgb(223, 221, 215);
+  padding: 2;
+  margin: 4;
+  border: 2px solid rgb(22, 21, 21);
+  text-align: center;
+  font-size: 10px;
+  width: 85px;
+}
+.civ-button-off:hover {
+  background-color: #6e746e;
+} 
+.civ-button-off:active {
+  background-color: #6e746e;
+  transform: translateZ(10px);
+  transform: translateX(2px);
+}
+
+.civ-button-on {
+  background: rgb(148, 147, 143);
+  padding: 2;
+  margin: 4;
+  border: 2px solid rgb(22, 21, 21);
+  text-align: center;
+  font-size: 10px;
+  width: 85px;
+}
+.civ-button-on:hover {
+  background-color: #6e746e;
+} 
+.civ-button-on:active {
+  background: rgb(148, 147, 143);
+  transform: translateZ(10px);
+  transform: translateX(2px);
+}
+
+/* GRAPH */
+/* width: 100% is a perfectly valid centering method*/
+.graph-button {
+  float: right;
+  width: 100%; 
+  margin: 2px;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.graph-button:hover {
+  background-color: #6e746e;
+} 
+.graph-button:active {
+  background-color: #6e746e;
+  transform: translateZ(10px);
+  transform: translateY(4px);
+}
+
+.stats-chart {
+  float: bottom;
+}
+
+:root {
+    /* background: rgb(197, 189, 179); */
+    background: rgb(177, 144, 104);
+}

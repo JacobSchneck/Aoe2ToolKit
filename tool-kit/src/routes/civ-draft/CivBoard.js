@@ -1,4 +1,5 @@
 import React from 'react';
+import "./CivBoard.css";
 
 
 const CIVS = ['Aztecs', 'Berbers', 'Britons', 'Bulgarians', 'Burmese', 'Byzayntines', 'Celts', 
