@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
+import "./App.css";
+
 import {CivBoard} from "./routes/civ-draft/CivBoard.js"
 import { Statistics } from './routes/statistics/Statistics.js';
 
@@ -13,27 +15,24 @@ export default function App() {
   return (
     <Router> 
      <div> 
-         <nav> 
-           <ul> 
-             <li> 
-               <Link to="/"> Home </Link> 
-             </li> 
-             <li> 
-               <Link to="/about"> About </Link> 
-             </li> 
-             <li> 
-               <Link to="/users"> Users </Link> 
-             </li> 
-           </ul> 
+        <header className="header">
+         <nav className="nav-bar"> 
+           {/* <ul className="links">  */}
+               <Link className="link-to-home" to="/"> Home </Link> 
+               <Link className="link-to-draft-board" to="/DraftBoard"> Draft_Board </Link> 
+               <Link className="link-to-stats-page" to="/StatPage"> Statistics </Link> 
+           {/* </ul>  */}
          </nav> 
+        </header>
+
          <Switch> 
-           <Route path="/about"> 
-             <About /> 
+           <Route path="/DraftBoard"> 
+            <DraftBoard/>
            </Route> 
-           <Route path="/users"> 
-             <Users /> 
+           <Route path="/StatPage"> 
+            <StatsPage/>
            </Route> 
-           <Route path="/users"> 
+           <Route path="/"> 
              <Home /> 
            </Route> 
          </Switch>
@@ -43,13 +42,26 @@ export default function App() {
 }
 
 function Home() {
-  return <h2> Home </h2>
+  return (
+    <div className="home">
+      <h2> Home </h2>
+      <p> Welcome to Jerbo's AOE2 Toolkit. Here you can find a draft board and statistics page to assist your play</p>
+    </div>
+  );
 }
 
-function About() {
-  return <CivBoard />
+function DraftBoard() {
+  return (
+    <div>
+      <CivBoard />
+    </div>
+  );
 }
 
-function Users() {
-  return <Statistics />
+function StatsPage() {
+  return (
+    <div className="stats-page">
+      <Statistics />
+    </div>
+  );
 } 

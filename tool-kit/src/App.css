@@ -1,0 +1,47 @@
+.header {
+  background-color: #9298a8;
+  min-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2cm;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+  font-size: calc(10px + vmin);
+  color: rgb(250, 119, 119);
+}
+
+.nav-bar {
+	display: grid;
+	/* float: right; */
+	grid-template-rows: 100px auto 100px;
+	grid-template-rows: 30px;
+	text-align: center;
+	justify-content: center;
+	/* margin-bottom: 3%; */
+	/* padding-bottom: 5%; */
+	/* margin: 10%; */
+}
+
+.link-to-home {
+	grid-column: 1;
+	padding-right: 1cm;
+}
+
+.link-to-draft-board {
+	padding-left: 1cm;
+	padding-right: 1cm;
+	grid-column: 2;
+}
+.link-to-stats-page {
+	padding-left: 1cm;
+	grid-column: 3;
+}
+
+.home {
+	display: grid; 
+	text-align: center;
+	justify-content: center;
+}
+
